@@ -1,0 +1,6 @@
+- name: Pick the file from the source and push it into the destination
+- hosts: webserver
+  tasks:
+  - copy:
+      src: /opt/index.html
+      dest: /var/www/html
